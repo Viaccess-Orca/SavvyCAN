@@ -403,8 +403,8 @@ void DBCMainEditor::refreshNodesTable()
         ui->NodesTable->setItem(rowIdx, 1, nodeComment);
     }
 
-    //insert a fresh entry at the bottom that contains nothing
     ui->NodesTable->insertRow(ui->NodesTable->rowCount());
+    ui->NodesTable->selectRow(0);
 }
 
 void DBCMainEditor::refreshMessagesTable(const DBC_NODE *node)
